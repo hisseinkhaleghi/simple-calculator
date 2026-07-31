@@ -4,19 +4,27 @@ public class MainActivity {
 
     public static void main(String[] args) {
 
-        double number1 = 20;
-        double number2 = 10;
+        double firstNumber = 20;
+        double secondNumber = 5;
 
-        double sum = number1 + number2;
-        double subtraction = number1 - number2;
-        double multiplication = number1 * number2;
-        double division = number1 / number2;
+        double addition = firstNumber + secondNumber;
+        double subtraction = firstNumber - secondNumber;
+        double multiplication = firstNumber * secondNumber;
 
-        System.out.println("First Number: " + number1);
-        System.out.println("Second Number: " + number2);
-        System.out.println("Addition: " + sum);
-        System.out.println("Subtraction: " + subtraction);
-        System.out.println("Multiplication: " + multiplication);
-        System.out.println("Division: " + division);
+        System.out.println("First Number: " + firstNumber);
+        System.out.println("Second Number: " + secondNumber);
+
+        System.out.println("Addition = " + addition);
+        System.out.println("Subtraction = " + subtraction);
+        System.out.println("Multiplication = " + multiplication);
+
+        if (secondNumber != 0) {
+            double division = firstNumber / secondNumber;
+            System.out.println("Division = " + division);
+        } else {
+            System.out.println("Cannot divide by zero.");
+        }
+
     }
+
 }
